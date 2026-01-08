@@ -1,26 +1,29 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trisha Nabata | Galaxy Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Babylen Pedres | Sunset Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     /* General Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background: radial-gradient(ellipse at bottom, #0b0c27 0%, #000 100%);
+      background: linear-gradient(to bottom, #ff9966, #ff5e62, #2c1053);
       color: #fff;
       overflow-x: hidden;
     }
 
-    /* Stars animation background */
+    /* Sunset glow overlay */
     body::before {
       content: '';
       position: fixed;
@@ -28,53 +31,46 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: transparent url('https://i.ibb.co/2y0vVtQ/stars.png') repeat;
+      background: radial-gradient(circle at top, rgba(255,255,255,0.15), transparent 60%);
       z-index: -1;
-      animation: moveStars 200s linear infinite;
-    }
-
-    @keyframes moveStars {
-      0% {background-position: 0 0;}
-      100% {background-position: -10000px 5000px;}
     }
 
     header {
       text-align: center;
-      padding: 80px 20px;
-      background: rgba(0,0,0,0.5);
-      backdrop-filter: blur(5px);
+      padding: 90px 20px;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
     }
 
     header h1 {
       font-size: 3rem;
-      color: #ff6ec7; /* Galaxy pink/purple */
-      text-shadow: 0 0 10px #ff6ec7, 0 0 20px #8a2be2;
+      color: #ffe259;
+      text-shadow: 0 0 10px #ffb347, 0 0 25px #ff5e62;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #ccc;
-      text-shadow: 0 0 5px #fff;
+      color: #fcefee;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       padding: 20px 0;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #ff6ec7;
-      text-shadow: 0 0 10px #ff6ec7;
+      color: #ffe259;
+      text-shadow: 0 0 10px #ffb347;
     }
 
     section {
@@ -85,107 +81,109 @@
 
     section h2 {
       text-align: center;
-      color: #8a2be2;
-      margin-bottom: 30px;
-      text-shadow: 0 0 10px #8a2be2;
+      color: #ffe259;
+      margin-bottom: 25px;
+      text-shadow: 0 0 10px #ffb347;
     }
 
-    .about, .projects, .contact {
-      margin-bottom: 50px;
-      background: rgba(255,255,255,0.05);
+    .card {
+      background: rgba(255,255,255,0.1);
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
-      backdrop-filter: blur(5px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(6px);
+      margin-bottom: 40px;
     }
 
-    .projects .project {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(138,43,226,0.5);
-    }
-
-    .projects .project h3 {
-      color: #ff6ec7;
+    .info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
     }
 
     .contact a {
       display: inline-block;
       margin: 10px;
       padding: 12px 25px;
-      background: #8a2be2;
+      background: #ff5e62;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+      border-radius: 30px;
+      font-weight: 600;
       transition: 0.3s;
     }
 
     .contact a:hover {
-      background: #ff6ec7;
-      box-shadow: 0 0 15px #ff6ec7, 0 0 30px #8a2be2;
+      background: #ffe259;
+      color: #2c1053;
+      box-shadow: 0 0 15px #ffe259;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      color: #ccc;
-      text-shadow: 0 0 5px #fff;
+      color: #fcefee;
+      font-size: 0.9rem;
     }
-
   </style>
 </head>
+
 <body>
 
   <!-- Header -->
   <header>
-    <h1>Trisha Nabata</h1>
-    <p>Web Developer | Designer | Tech Enthusiast</p>
+    <h1>Babylen Pedres</h1>
+    <p>Student | Aspiring Professional | Lifelong Learner</p>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="#about">About Me</a>
+    <a href="#goal">My Goal</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Trisha Nabata, a passionate web developer inspired by the universe. I enjoy creating modern, interactive websites and bringing ideas to life with code. Constant learning and exploring new technologies are my favorite things!</p>
+  <section id="about">
+    <div class="card">
+      <h2>All About Me</h2>
+      <p>
+        Hello! I am <strong>Babylen Pedres</strong>, 20 years old, currently living in
+        <strong>Balanac, Ligao City</strong>. I am a motivated student who believes in
+        continuous growth, self-improvement, and learning through experience.
+        I strive to stay positive, focused, and dedicated in everything I do.
+      </p>
+    </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
+  <!-- Goal Section -->
+  <section id="goal">
+    <div class="card">
+      <h2>My Goal</h2>
+      <p>
+        My goal is to become a determined and successful student who consistently
+        works hard to achieve academic excellence. I aim to develop my skills,
+        overcome challenges with perseverance, and use my education to build a
+        better future for myself and my community.
+      </p>
     </div>
-
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>A brief description of your project goes here. Mention technologies used and what it does.</p>
-    </div>
-
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Reach out through any platform below:</p>
-    <a href="mailto:nabatatrisha@gmail.com">Email</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a>
-    <a href="YOUR_FACEBOOK_LINK_HERE" target="_blank">Facebook</a>
+  <section id="contact">
+    <div class="card contact">
+      <h2>Contact Information</h2>
+      <div class="info">
+        <p><strong>Address:</strong> Balanac, Ligao City</p>
+        <p><strong>Age:</strong> 20</p>
+        <p><strong>Email:</strong> babylenpedres@gmail.com</p>
+      </div>
+
+      <a href="mailto:babylenpedres@gmail.com">Send Email</a>
+    </div>
   </section>
 
   <footer>
-    &copy; 2026 Trisha Nabata. All rights reserved.
+    &copy; 2026 Babylen Pedres. All rights reserved.
   </footer>
 
 </body>
