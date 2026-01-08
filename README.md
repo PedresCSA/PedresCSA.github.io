@@ -1,12 +1,10 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Babylen Pedres | Sunset Portfolio</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     /* General Reset */
@@ -14,44 +12,48 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
 
     body {
-      background: linear-gradient(to bottom, #ff9966, #ff5e62, #2c1053);
+      background: linear-gradient(to bottom, #ff7e5f, #feb47b, #ff6a88, #8e2de2);
       color: #fff;
       overflow-x: hidden;
+      min-height: 100vh;
     }
 
-    /* Sunset glow overlay */
+    /* Floating light particles */
     body::before {
       content: '';
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at top, rgba(255,255,255,0.15), transparent 60%);
+      inset: 0;
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px);
+      background-size: 60px 60px;
+      animation: float 120s linear infinite;
       z-index: -1;
+    }
+
+    @keyframes float {
+      from { background-position: 0 0; }
+      to { background-position: 4000px 2000px; }
     }
 
     header {
       text-align: center;
-      padding: 90px 20px;
+      padding: 80px 20px;
       background: rgba(0,0,0,0.3);
       backdrop-filter: blur(6px);
     }
 
     header h1 {
       font-size: 3rem;
-      color: #ffe259;
-      text-shadow: 0 0 10px #ffb347, 0 0 25px #ff5e62;
-      margin-bottom: 10px;
+      color: #ffe29f;
+      text-shadow: 0 0 15px #ff9a76;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #fcefee;
+      color: #fbeaff;
     }
 
     nav {
@@ -64,13 +66,13 @@
     nav a {
       color: #fff;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: bold;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #ffe259;
-      text-shadow: 0 0 10px #ffb347;
+      color: #ffe29f;
+      text-shadow: 0 0 10px #ffe29f;
     }
 
     section {
@@ -81,48 +83,56 @@
 
     section h2 {
       text-align: center;
-      color: #ffe259;
       margin-bottom: 25px;
-      text-shadow: 0 0 10px #ffb347;
+      color: #ffe29f;
+      text-shadow: 0 0 10px #ff9a76;
     }
 
     .card {
-      background: rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.12);
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      box-shadow: 0 0 25px rgba(0,0,0,0.2);
       backdrop-filter: blur(6px);
       margin-bottom: 40px;
     }
 
-    .info p {
-      margin-bottom: 10px;
-      font-size: 1rem;
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      text-align: center;
+    }
+
+    .skills li {
+      background: rgba(0,0,0,0.25);
+      padding: 12px;
+      border-radius: 8px;
     }
 
     .contact a {
       display: inline-block;
       margin: 10px;
       padding: 12px 25px;
-      background: #ff5e62;
+      background: #ff7e5f;
       color: #fff;
       text-decoration: none;
       border-radius: 30px;
-      font-weight: 600;
+      font-weight: bold;
       transition: 0.3s;
     }
 
     .contact a:hover {
-      background: #ffe259;
-      color: #2c1053;
-      box-shadow: 0 0 15px #ffe259;
+      background: #feb47b;
+      box-shadow: 0 0 15px #ffe29f;
+      color: #000;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      color: #fcefee;
-      font-size: 0.9rem;
+      color: #fbeaff;
     }
   </style>
 </head>
@@ -132,26 +142,44 @@
   <!-- Header -->
   <header>
     <h1>Babylen Pedres</h1>
-    <p>Student | Aspiring Professional | Lifelong Learner</p>
+    <p>Student | Aspiring Web Developer | Creative Learner</p>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <a href="#about">About Me</a>
-    <a href="#goal">My Goal</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#goal">Goal</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <!-- About Section -->
   <section id="about">
     <div class="card">
-      <h2>All About Me</h2>
+      <h2>About Me</h2>
       <p>
-        Hello! I am <strong>Babylen Pedres</strong>, 20 years old, currently living in
-        <strong>Balanac, Ligao City</strong>. I am a motivated student who believes in
-        continuous growth, self-improvement, and learning through experience.
-        I strive to stay positive, focused, and dedicated in everything I do.
+        Hi! I’m <strong>Babylen Pedres</strong>, 20 years old and currently studying at
+        <strong>Southern Luzon Technological College Foundation Pio Duran Inc.</strong>
+        I am passionate about learning new technologies and improving my skills in web development.
+        I enjoy exploring creative designs, building user-friendly websites, and continuously
+        challenging myself to grow both personally and professionally.
+        I believe that dedication, curiosity, and consistency are the keys to success.
       </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="card skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>Basic JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Creative UI Design</li>
+        <li>Basic Computer Skills</li>
+        <li>Teamwork & Communication</li>
+      </ul>
     </div>
   </section>
 
@@ -160,10 +188,11 @@
     <div class="card">
       <h2>My Goal</h2>
       <p>
-        My goal is to become a determined and successful student who consistently
-        works hard to achieve academic excellence. I aim to develop my skills,
-        overcome challenges with perseverance, and use my education to build a
-        better future for myself and my community.
+        My goal is to become a skilled and confident web developer who can create meaningful
+        and impactful digital experiences. I want to continuously improve my technical knowledge,
+        learn advanced programming skills, and gain real-world experience in the tech industry.
+        In the future, I hope to work on projects that help people, inspire creativity, and
+        contribute positively to society while achieving personal growth and career success.
       </p>
     </div>
   </section>
@@ -171,14 +200,9 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="card contact">
-      <h2>Contact Information</h2>
-      <div class="info">
-        <p><strong>Address:</strong> Balanac, Ligao City</p>
-        <p><strong>Age:</strong> 20</p>
-        <p><strong>Email:</strong> babylenpedres@gmail.com</p>
-      </div>
-
-      <a href="mailto:babylenpedres@gmail.com">Send Email</a>
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out:</p>
+      <a href="mailto:babylenpedres@gmail.com">Email</a>
     </div>
   </section>
 
