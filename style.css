@@ -2,58 +2,66 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #ff9966, #ff5e62);
+  background: linear-gradient(135deg, #ff512f, #f09819);
   color: #fff;
   text-align: center;
-  padding: 40px;
+  padding: 60px 40px;
 }
 
 /* Header */
 header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .profile-img {
-  width: 200px;   /* Bigger profile picture */
-  height: 200px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
-  border: 5px solid #ffd700;
+  border: 8px solid #ffd700;
   object-fit: cover;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
 }
 
 h1 {
-  margin-top: 15px;
-  font-size: 36px; /* Bigger name */
+  margin-top: 25px;
+  font-size: 52px;
+  letter-spacing: 2px;
+  color: #fff9e6;
 }
 
 .tagline {
-  font-size: 18px;
+  font-size: 22px;
   color: #ffe6cc;
+  margin-top: 10px;
 }
 
 /* Sections */
 section {
-  background: rgba(0, 0, 0, 0.35);
-  margin: 25px auto;
-  padding: 30px;
-  width: 90%;          /* Fill most of the screen */
-  max-width: 900px;   /* Much wider */
-  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.45);
+  margin: 40px auto;
+  padding: 50px;
+  width: 95%;
+  max-width: 1200px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-  margin-bottom: 15px;
-  font-size: 26px;
+  margin-bottom: 25px;
+  font-size: 36px;
   color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 p, a {
-  font-size: 18px;   /* Bigger text */
+  font-size: 22px;
+  line-height: 1.8;
 }
 
 a {
@@ -65,21 +73,29 @@ a {
 .skill-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;          /* More space */
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .skill {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;   /* Bigger skills text */
+  padding: 25px;
+  border-radius: 18px;
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.6);
 }
 
 .skill i {
-  color: #ff4500;
-  font-size: 22px;   /* Bigger shield icon */
+  color: #ffeb3b;
+  font-size: 30px;
 }
