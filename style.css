@@ -1,0 +1,124 @@
+‎* {
+‎  margin: 0;
+‎  padding: 0;
+‎  box-sizing: border-box;
+‎  font-family: "Segoe UI", sans-serif;
+‎}
+‎
+‎body {
+‎  background: #040404;
+‎  color: #eaeaea;
+‎}
+‎
+‎/* Navbar */
+‎nav {
+‎  display: flex;
+‎  justify-content: space-between;
+‎  align-items: center;
+‎  padding: 15px 40px;
+‎  background: #000;
+‎  position: sticky;
+‎  top: 0;
+‎  z-index: 100;
+‎}
+‎
+‎.logo {
+‎  font-weight: bold;
+‎  letter-spacing: 2px;
+‎}
+‎
+‎nav ul {
+‎  list-style: none;
+‎  display: flex;
+‎}
+‎
+‎nav ul li {
+‎  margin-left: 25px;
+‎}
+‎
+‎nav ul li a {
+‎  color: #aaa;
+‎  text-decoration: none;
+‎  transition: 0.3s;
+‎}
+‎
+‎nav ul li a:hover {
+‎  color: #fff;
+‎}
+‎
+‎/* Hero */
+‎.hero {
+‎  text-align: center;
+‎  padding: 90px 20px;
+‎}
+‎
+‎.profile-pic {
+‎  width: 155px;
+‎  height: 155px;
+‎  border-radius: 50%;
+‎  border: 4px solid #1a1a1a;
+‎  object-fit: cover;
+‎  margin-bottom: 20px;
+‎}
+‎
+‎.hero h1 {
+‎  font-size: 2.6rem;
+‎}
+‎
+‎.hero p {
+‎  margin-top: 10px;
+‎  color: #999;
+‎  font-size: 1.1rem;
+‎}
+‎
+‎/* Sections */
+‎section {
+‎  max-width: 900px;
+‎  margin: auto;
+‎  padding: 70px 20px;
+‎}
+‎
+‎h2 {
+‎  margin-bottom: 20px;
+‎  border-bottom: 2px solid #222;
+‎  display: inline-block;
+‎}
+‎
+‎/* Skills */
+‎.skills-grid {
+‎  display: flex;
+‎  flex-wrap: wrap;
+‎  gap: 15px;
+‎}
+‎
+‎.skills-grid img {
+‎  transition: transform 0.3s;
+‎}
+‎
+‎.skills-grid img:hover {
+‎  transform: scale(1.05);
+‎}
+‎
+‎/* Contact */
+‎button {
+‎  margin-top: 15px;
+‎  padding: 10px 25px;
+‎  background: #000;
+‎  color: #fff;
+‎  border: 1px solid #333;
+‎  cursor: pointer;
+‎  transition: 0.3s;
+‎}
+‎
+‎button:hover {
+‎  background: #222;
+‎}
+‎
+‎/* Footer */
+‎footer {
+‎  text-align: center;
+‎  padding: 20px;
+‎  background: #000;
+‎  color: #666;
+‎}
+‎
