@@ -2,62 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Babylen Pedres | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">BP</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <!-- Profile Picture -->
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
 
-  <!-- Profile Section -->
-  <section class="profile">
-    <div class="profile-container">
-      <img src="https://uploads.onecompiler.io/44abe627q/44abe6a6h/1767848624750.jpg" alt="Profile">
-    </div>
     <h1>Babylen Pedres</h1>
-  </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m Babylen Pedres, an aspiring developer passionate about learning
-      programming and building modern web applications using clean and
-      simple designs.
+    <p class="about">
+      About: Passionate learner and aspiring developer interested in building
+      beautiful and functional web applications.
     </p>
-  </section>
 
-  <!-- Skills -->
-  <section id="skills">
+    <p class="email">
+      Gmail: <a href="mailto:babylenpedres@gmail.com">babylenpedres@gmail.com</a>
+    </p>
+
     <h2>Skills</h2>
-    <div class="skills-grid">
-      <img src="https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=E34F26">
-      <img src="https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=1572B6">
-      <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-      <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=3776AB">
+
+    <div class="skills">
+      <div class="skill"><i class="fa-solid fa-shield"></i> HTML</div>
+      <div class="skill"><i class="fa-solid fa-shield"></i> CSS</div>
+      <div class="skill"><i class="fa-solid fa-shield"></i> Python</div>
+      <div class="skill"><i class="fa-solid fa-shield"></i> JavaScript</div>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <span id="babylenpedres@gmail.com"></span></p>
-    <button onclick="sayHello()">
-  </section>
-
-  <footer>
-    <p>© 2026 Babylen Pedres</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
